@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Venta de Chocotortas</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Venta de Chocotortas en Buenos Aires</h1>
+        <p>Deliciosas chocotortas caseras. ¡Ordena la tuya ahora!</p>
+    </header>
+
+    <main>
+        <section id="product-section">
+            <img src="chocotorta.jpg" alt="Chocotorta" class="product-image">
+            <h2>Chocotorta - $9,000</h2>
+            <p>Puedes ordenar una unidad o una docena a precio especial.</p>
+
+            <div id="quantity-section">
+                <label for="quantity">Cantidad:</label>
+                <select id="quantity">
+                    <option value="1">1 unidad - $9,000</option>
+                    <option value="12">Docena - $108,000</option>
+                </select>
+            </div>
+
+            <h3>Elige tu método de pago:</h3>
+            <div id="payment-options">
+                <label><input type="radio" name="paymentMethod" value="transferencia"> Transferencia Bancaria</label>
+                <label><input type="radio" name="paymentMethod" value="mercadoPago"> Mercado Pago, Tarjeta de Crédito o Débito</label>
+            </div>
+
+            <button id="orderButton">Realizar Pedido</button>
+            <p id="orderMessage"></p>
+        </section>
+    </main>
+
+    <footer>
+        <p>Solo disponible en Ciudad Autónoma de Buenos Aires.</p>
+        <p>Para coordinar el punto de encuentro, contáctanos al <a href="tel:+5491138781103">+54 9 11 3878 1103</a></p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
